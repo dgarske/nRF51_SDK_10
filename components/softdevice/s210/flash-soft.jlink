@@ -1,0 +1,4 @@
+loadbin ../../components/softdevice/s210/hex/s210_nrf51422_5.0.0_softdevice.bin, 0
+r
+g
+exit

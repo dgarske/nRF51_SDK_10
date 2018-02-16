@@ -1,0 +1,13 @@
+GNU_INSTALL_ROOT := /opt/gcc-arm-none-eabi
+GNU_VERSION := 4.9.3
+GNU_PREFIX := arm-none-eabi
+
+GDB_PORT_NUMBER := 9992
+
+FLASH_START_ADDR = $(shell $(OBJDUMP) -h         $(OUTPUT_BINARY_DIRECTORY)_$(TARGET)/$(OUTPUT_FILENAME).out -j .text | grep .text | awk '{print $$4}')
+
+JLINK_ROOT = /Applications/SEGGER/JLink/
+JLINK_OPTS = -device nrf51422 -if swd -speed 4000
+JLINK_GDB_OPTS = -noir
+JLINK = $(JLINK_ROOT)JLinkExe $(JLINK_OPTS)
+JLINKD_GDB = $(JLINK_ROOT)JLinkGDBServer $(JLINK_GDB_OPTS)
