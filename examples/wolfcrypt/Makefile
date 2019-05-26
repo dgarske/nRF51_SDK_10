@@ -158,6 +158,7 @@ C_SOURCE_FILES += $(abspath ../../external/wolfssl/wolfcrypt/src/ecc.c)
 # math libraries
 C_SOURCE_FILES += $(abspath ../../external/wolfssl/wolfcrypt/src/tfm.c)
 C_SOURCE_FILES += $(abspath ../../external/wolfssl/wolfcrypt/src/integer.c)
+C_SOURCE_FILES += $(abspath ../../external/wolfssl/wolfcrypt/src/wolfmath.c)
 C_SOURCE_FILES += $(abspath ../../external/wolfssl/wolfcrypt/src/fe_low_mem.c)
 C_SOURCE_FILES += $(abspath ../../external/wolfssl/wolfcrypt/src/ge_low_mem.c)
 # port
